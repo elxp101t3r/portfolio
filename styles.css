@@ -9,6 +9,19 @@ body{
     color: #ddd;
 }
 
+.parallax{
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.project img:hover{
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
+}
+
+
 header{
     background-color: #000;
     color: #fff;
@@ -58,7 +71,7 @@ section{
 #about{
     background-image: url('images/background_about.jpg');
     background-size: cover;
-    color: #fff;
+    color: #ffffff;
     background-position: center;
     position: relative;
 }
