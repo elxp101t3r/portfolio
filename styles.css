@@ -117,4 +117,36 @@ footer{
     nav a{
         margin: 0 10px;
     }
+    .nav-icon{
+        display: block;
+    }
+
+    .nav-toggle:checked ~ .nav-icon span:nth-child(1),
+    .nav-toggle:checked ~ .nav-icon span:nth-child(3){
+        transform: rotate(45deg);
+    }
+
+    .nav-toggle:checked ~ .nav-icon span:nth-child(2){
+        opacity: 0;
+    }
+
+    .nav-toggle:checked ~ ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        position: absolute;
+        top: 80px;
+        left: 0; 
+        width: 100%;
+        background-color: #000;
+        z-index: 1;
+    }
+
+    nav li {
+        margin: 15px 0;
+    }
+
+    nav a{
+        font-size: 24px;
+    }
 }
