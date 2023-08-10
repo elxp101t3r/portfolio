@@ -70,3 +70,10 @@ section{
     max-width: 100%;
     height: auto;
 }
+
+footer{
+    background-color: #000;
+    color: #888;
+    text-align: center;
+    padding: 20px 0;
+}
